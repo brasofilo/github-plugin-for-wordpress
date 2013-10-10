@@ -2,21 +2,26 @@
 
 if( $_SERVER["REQUEST_METHOD"] == "POST" )
 {
-    if( isset( $_POST['reset'] ) )
+    if ( 
+        isset( $_POST['b5f_gpfw_nonce'] ) 
+        &&  wp_verify_nonce( $_POST['b5f_gpfw_nonce'], plugin_basename( __FILE__ ) ) 
+        )
     {
-        delete_option( 'GITHUB_API_KEY' );
-        delete_option( 'GITHUB_API_SECRET_KEY' );
-        delete_option( 'GITHUB_AUTHENTICATION_TOKEN' );
-    }
-    else
-    {
-        if( isset( $_POST['api_key'] ) )
-            update_option( 'GITHUB_API_KEY', $_POST['api_key'] );
-        if( isset( $_POST['api_secret_key'] ) )
-            update_option( 'GITHUB_API_SECRET_KEY', $_POST['api_secret_key'] );
+        if( isset( $_POST['reset'] ) )
+        {
+            delete_option( 'GITHUB_API_KEY' );
+            delete_option( 'GITHUB_API_SECRET_KEY' );
+            delete_option( 'GITHUB_AUTHENTICATION_TOKEN' );
+        }
+        else
+        {
+            if( isset( $_POST['api_key'] ) )
+                update_option( 'GITHUB_API_KEY', $_POST['api_key'] );
+            if( isset( $_POST['api_secret_key'] ) )
+                update_option( 'GITHUB_API_SECRET_KEY', $_POST['api_secret_key'] );
+        }
     }
 }
-
 
 $state = base64_encode( time() );
 $redirect = admin_url($this->plugin_admin_url);
@@ -140,6 +145,7 @@ else
                 </tr>
 
                 </table> 
+                <?php wp_nonce_field( plugin_basename( __FILE__ ), 'b5f_gpfw_nonce' ); ?>
             </form>
                 
 			</div> <!-- post-body-content -->

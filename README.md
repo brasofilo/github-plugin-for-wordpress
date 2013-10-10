@@ -31,6 +31,10 @@ Main changes:
 
 ##Changelog
 
+### 2013.10.10
+
+* Added security nonces in admin page
+
 ### 2013.10.09
 
 * Initial Public Release

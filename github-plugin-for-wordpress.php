@@ -3,7 +3,7 @@
  * Plugin Name: GitHub oAuth for WordPress
  * Plugin URI:  https://github.com/brasofilo/github-plugin-for-wordpress
  * Description: Basic information about your repositories and its Forks and Watchers. 
- * Version: 2013.10.09 
+ * Version: 2013.10.10 
  * Author: Rodolfo Buaiz
  * Author URI: http://wordpress.stackexchange.com/users/12615/brasofilo
  * License: GPLv2 or later
