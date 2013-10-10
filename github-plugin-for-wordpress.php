@@ -76,7 +76,7 @@ class B5F_Github_oAuth_For_WordPress
     /**
      * Constructor. Intentionally left empty and public.
      *
-     * @see plugin_setup()
+     * @see   plugin_setup()
      * @since 2012.09.12
      */
     public function __construct() {}
@@ -114,10 +114,7 @@ class B5F_Github_oAuth_For_WordPress
 		add_filter( 'upgrader_source_selection', array( $this, 'rename_github_zip' ), 1, 3);
         
 		include_once 'inc/class-shortcode.php';
-        add_shortcode( 
-            'github_oauth', 
-            array( 'B5F_Shortcode_GitHub_For_WordPress', 'render_shortcode' ) 
-        );
+        new B5F_Shortcode_GitHub_For_WordPress();
 
         include_once 'inc/plugin-updates/plugin-update-checker.php';
 		$updateChecker = new PluginUpdateChecker(
