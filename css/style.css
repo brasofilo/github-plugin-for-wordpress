@@ -1,0 +1,154 @@
+div.github {
+    /*width: 270px;*/
+}
+
+div.github h2{
+    text-align: center;
+}
+
+div.github div.counts {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+div.github div.counts div {
+    display: inline-block;
+    padding: 5px;
+}
+
+div.github ol.repos {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.bg-mine {
+    background-image: linear-gradient(top, rgb(105,194,97) 13%, rgb(137,233,127) 62%, rgb(165,255,166) 84%, rgb(198,255,200) 91%);
+    background-image: -o-linear-gradient(top, rgb(105,194,97) 13%, rgb(137,233,127) 62%, rgb(165,255,166) 84%, rgb(198,255,200) 91%);
+    background-image: -moz-linear-gradient(top, rgb(105,194,97) 13%, rgb(137,233,127) 62%, rgb(165,255,166) 84%, rgb(198,255,200) 91%);
+    background-image: -webkit-linear-gradient(top, rgb(105,194,97) 13%, rgb(137,233,127) 62%, rgb(165,255,166) 84%, rgb(198,255,200) 91%);
+    background-image: -ms-linear-gradient(top, rgb(105,194,97) 13%, rgb(137,233,127) 62%, rgb(165,255,166) 84%, rgb(198,255,200) 91%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.13, rgb(105,194,97)),
+        color-stop(0.62, rgb(137,233,127)),
+        color-stop(0.84, rgb(165,255,166)),
+        color-stop(0.91, rgb(198,255,200))
+        );
+}
+
+.bg-not-mine {
+    background-image: linear-gradient(top, rgb(133,163,152) 10%, rgb(160,196,183) 55%, rgb(192,236,220) 78%);
+    background-image: -o-linear-gradient(top, rgb(133,163,152) 10%, rgb(160,196,183) 55%, rgb(192,236,220) 78%);
+    background-image: -moz-linear-gradient(top, rgb(133,163,152) 10%, rgb(160,196,183) 55%, rgb(192,236,220) 78%);
+    background-image: -webkit-linear-gradient(top, rgb(133,163,152) 10%, rgb(160,196,183) 55%, rgb(192,236,220) 78%);
+    background-image: -ms-linear-gradient(top, rgb(133,163,152) 10%, rgb(160,196,183) 55%, rgb(192,236,220) 78%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0.1, rgb(133,163,152)),
+        color-stop(0.55, rgb(160,196,183)),
+        color-stop(0.78, rgb(192,236,220))
+        );
+}
+div.github ol.repos li{
+    height: 120px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px dashed #000000;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    /*	background-color: #e1e1e1;*/
+
+
+    position: relative;
+    display: inline-table;
+    margin: 5px;
+    background-clip: padding-box;
+    padding: 0 20px
+}
+
+div.github ol.repos li h3{
+    padding: 0px;
+    margin: 5px 0px;
+}
+
+div.github ol.repos li a, div.github ol.repos li a:hover, div.github ol.repos li a:visited {
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+div.github ol.repos li > div{
+    border-top: 1px dashed #000000;
+    position: absolute;	
+    bottom: 5px;
+    width: 100%;
+    margin: 0 -20px;
+}
+
+div.github ol.repos li div div{
+    display: inline-block;
+    font-size: 25px;
+    width: 40%;
+    margin-top: 8px;
+}
+
+div.github ol.repos li div div span{
+    font-size: 8px;
+    text-transform: uppercase;
+}
+
+.row-title {
+    width: 25%;
+}
+
+.row-title.starred {
+    width: 45%;
+}
+
+div.github h2 {
+    margin: 0 0 15px !important;
+    opacity: .5;
+}
+.row-actions {
+    visibility:visible;
+    color: #A5A5A5;
+}
+.counts a {
+    font-size: 2em;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.counts span {
+    font-size: .8em;
+}
+.counts div {
+    margin: 0 10px;
+}
+.github h2 {
+    font-size: 3em !important;
+    font-weight: bolder;
+}
+.github h2 a {
+    text-decoration: none;
+}
+
+
+.tab-content{  
+    display: none;  
+}  
+
+.tab-content.current{  
+    display: inherit;  
+}  
+
+.nav-tab-active {
+    background: #F8F8F8;
+}

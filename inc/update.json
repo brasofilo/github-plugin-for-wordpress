@@ -1,0 +1,16 @@
+{
+    "name" : "Github Plugin for WordPress",
+    "slug" : "github-plugin-for-wordpress-master",
+    "download_url" : "https://github.com/brasofilo/github-plugin-for-wordpress/archive/master.zip",
+    "version" : "2013.10.09",
+    "author" : "Rodolfo Buaiz",
+    "author_homepage" : "http://brasofilo.com",
+    "homepage" : "https://github.com/brasofilo/github-plugin-for-wordpress",
+    "tested" : "3.6",
+    "sections" : {
+        "description" : "Basic information about your repositories and its Forks and Watchers.",
+        "changelog" : "<p><ul><li><strong>2013.10.09</strong><p>Initial Public Release.</p></li></ul>"
+    },
+    "upgrade_notice" : "Version 2013.10.09 Plugin launch.",
+    "last_updated" : "2013.10.09"
+}
