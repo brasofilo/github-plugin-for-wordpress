@@ -18,7 +18,7 @@ class B5F_Shortcode_GitHub_For_WordPress
      */
     public function render_shortcode( $atts )
     {
-        wp_enqueue_style( 'github-style', plugins_url( '/css/style.css', __FILE__ ) );
+        wp_enqueue_style( 'github-style', B5F_Github_oAuth_For_WordPress::get_instance()->plugin_url . 'css/style.css' );
         
         if( !$token = get_option( 'GITHUB_AUTHENTICATION_TOKEN' ) )
             return;
