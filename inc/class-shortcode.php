@@ -2,7 +2,10 @@
 
 class B5F_Shortcode_GitHub_For_WordPress
 {
-    public function __construct() {}
+    public function __construct() 
+    {
+        add_shortcode( 'github_oauth', array( $this, 'render_shortcode' ) );
+    }
     
     
     /**
