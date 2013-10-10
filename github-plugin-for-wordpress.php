@@ -30,7 +30,7 @@ add_action(
 );
 
 
-class B5F_Github_Example
+class B5F_Github_Plugin_For_WordPress
 {
     /**
      * Plugin instance.
